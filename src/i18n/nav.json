@@ -1,0 +1,14 @@
+{
+  "en": {
+    "home": "Home",
+    "services": "Services",
+    "team": "Team",
+    "getStarted": "Get Started"
+  },
+  "es": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "team": "Equipo",
+    "getStarted": "Contacto"
+  }
+}
