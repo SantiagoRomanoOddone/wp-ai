@@ -72,3 +72,6 @@ export default function Nav({ current, onNavigate }) {
     </header>
   );
 }
+
+
+

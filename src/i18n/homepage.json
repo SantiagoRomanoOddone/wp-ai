@@ -1,0 +1,134 @@
+{
+  "en": {
+    "hero": {
+      "tagline": "AI & Machine Learning for Small Business",
+      "headline": "Build practical AI that grows your business",
+      "body": "SimpleCode helps startups and small enterprises turn data into decisions. Forecast demand, automate workflows, and discover new opportunities with friendly, expert guidance.",
+      "ctaPrimary": "Talk to an Expert",
+      "ctaSecondary": "View Services",
+      "features": {
+        "privacy": "Privacy-first, transparent",
+        "speed": "Quick wins in weeks",
+        "roi": "ROI-focused delivery"
+      },
+      "stats": [
+        { "icon": "chart", "title": "Forecasting", "desc": "Predict sales & demand." },
+        { "icon": "cluster", "title": "Segmentation", "desc": "Understand your customers." },
+        { "icon": "spark", "title": "Prediction", "desc": "Score leads & churn." },
+        { "icon": "rocket", "title": "Automation", "desc": "Save hours every week." }
+      ]
+    },
+    "services": {
+      "kicker": "What we do",
+      "title": "Clear, practical AI services",
+      "subtitle": "We design solutions that match your size, budget, and goals—no unnecessary complexity.",
+      "items": [
+        {
+          "icon": "chart",
+          "title": "Forecasting",
+          "points": ["Sales & demand", "Inventory planning", "Cash flow"]
+        },
+        {
+          "icon": "spark",
+          "title": "Prediction",
+          "points": ["Lead scoring", "Churn risk", "Conversion uplift"]
+        },
+        {
+          "icon": "cluster",
+          "title": "Clustering",
+          "points": ["Customer segments", "Product groups", "Anomaly detection"]
+        },
+        {
+          "icon": "rocket",
+          "title": "AI Automation",
+          "points": ["Reporting bots", "Data pipelines", "Ops assistance"]
+        }
+      ]
+    },
+    "why": {
+      "kicker": "Why SimpleCode",
+      "title": "Built for small businesses",
+      "subtitle": "Boutique attention, fast iterations, and measurable results.",
+      "items": [
+        {
+          "title": "Small-biz first",
+          "desc": "Solutions sized to your team, budget, and timeline—no heavy enterprise bloat."
+        },
+        {
+          "title": "ROI oriented",
+          "desc": "We prioritize quick wins and compounding value you can measure."
+        },
+        {
+          "title": "Clear & friendly",
+          "desc": "We speak business, not jargon. You’ll know what we’re building and why."
+        }
+      ]
+    }
+  },
+  "es": {
+    "hero": {
+      "tagline": "IA y Machine Learning para pequeñas empresas",
+      "headline": "Crea IA práctica que haga crecer tu empresa",
+      "body": "SimpleCode ayuda a startups y pequeñas empresas a convertir datos en decisiones. Pronostica la demanda, automatiza flujos de trabajo y descubre nuevas oportunidades con asesoría experta y cercana.",
+      "ctaPrimary": "Hablar con un experto",
+      "ctaSecondary": "Ver servicios",
+      "features": {
+        "privacy": "Privacidad primero, con transparencia",
+        "speed": "Resultados rápidos en semanas",
+        "roi": "Entrega enfocada en ROI"
+      },
+      "stats": [
+        { "icon": "chart", "title": "Pronósticos", "desc": "Predecir ventas y demanda." },
+        { "icon": "cluster", "title": "Segmentación", "desc": "Comprende a tus clientes." },
+        { "icon": "spark", "title": "Predicción", "desc": "Calificar leads y riesgo de abandono." },
+        { "icon": "rocket", "title": "Automatización", "desc": "Ahorra horas cada semana." }
+      ]
+    },
+    "services": {
+      "kicker": "Qué hacemos",
+      "title": "Servicios de IA claros y prácticos",
+      "subtitle": "Diseñamos soluciones acordes a tu tamaño, presupuesto y metas—sin complejidad innecesaria.",
+      "items": [
+        {
+          "icon": "chart",
+          "title": "Pronósticos",
+          "points": ["Ventas y demanda", "Planificación de inventario", "Flujo de caja"]
+        },
+        {
+          "icon": "spark",
+          "title": "Predicción",
+          "points": ["Puntaje de leads", "Riesgo de abandono", "Incremento de conversión"]
+        },
+        {
+          "icon": "cluster",
+          "title": "Clustering",
+          "points": ["Segmentos de clientes", "Grupos de productos", "Detección de anomalías"]
+        },
+        {
+          "icon": "rocket",
+          "title": "Automatización con IA",
+          "points": ["Bots de reportes", "Pipelines de datos", "Asistencia operativa"]
+        }
+      ]
+    },
+    "why": {
+      "kicker": "Por qué SimpleCode",
+      "title": "Hecho para pequeñas empresas",
+      "subtitle": "Atención boutique, iteraciones rápidas y resultados medibles.",
+      "items": [
+        {
+          "title": "Pensado primero para pymes",
+          "desc": "Soluciones acordes a tu equipo, presupuesto y tiempos—sin el peso del enterprise."
+        },
+        {
+          "title": "Orientados al ROI",
+          "desc": "Priorizamos resultados rápidos y valor acumulativo que puedes medir."
+        },
+        {
+          "title": "Claros y cercanos",
+          "desc": "Hablamos en términos de negocio, no jerga técnica. Sabrás qué construimos y por qué."
+        }
+      ]
+    }
+  }
+}

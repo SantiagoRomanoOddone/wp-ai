@@ -1,0 +1,64 @@
+{
+  "en": {
+    "kicker": "Services",
+    "title": "From idea to impact",
+    "subtitle": "Pick a starting point or combine services. We’ll tailor scope to your goals and budget.",
+    "services": [
+      {
+        "icon": "chart",
+        "title": "Forecasting",
+        "desc": "Predict sales, demand, and cash flow to plan inventory and staffing with confidence.",
+        "bullets": ["Time‑series models (ARIMA, Deep Learning)", "Seasonality & promotion effects", "Scenario planning"]
+      },
+      {
+        "icon": "spark",
+        "title": "Prediction & Scoring",
+        "desc": "Prioritize leads, flag churn risk, and estimate conversion uplift to focus efforts where it matters.",
+        "bullets": ["Classification & uplift modeling", "Explainable predictions", "A/B guidance"]
+      },
+      {
+        "icon": "cluster",
+        "title": "Clustering & Segmentation",
+        "desc": "Understand your customers and products with data‑driven groups for targeting and personalization.",
+        "bullets": ["Customer personas", "Product grouping", "Anomaly detection"]
+      },
+      {
+        "icon": "rocket",
+        "title": "AI Automation",
+        "desc": "Automate manual reporting, data cleanup, and repetitive workflows to save hours each week.",
+        "bullets": ["Pipelines & dashboards", "Data quality checks", "Ops assistants & bots"]
+      }
+    ]
+  },
+  "es": {
+    "kicker": "Servicios",
+    "title": "De la idea al impacto",
+    "subtitle": "Elige un punto de partida o combina servicios. Ajustaremos el alcance a tus objetivos y presupuesto.",
+    "services": [
+      {
+        "icon": "chart",
+        "title": "Pronósticos",
+        "desc": "Predice ventas, demanda y flujo de caja para planificar inventario y personal con confianza.",
+        "bullets": ["Modelos de series temporales (ARIMA, Deep Learning)", "Efectos de estacionalidad y promoción", "Planificación de escenarios"]
+      },
+      {
+        "icon": "spark",
+        "title": "Predicción y scoring",
+        "desc": "Prioriza leads, identifica riesgo de churn y estima el aumento de conversión para enfocar esfuerzos donde importa.",
+        "bullets": ["Modelos de clasificación y uplift", "Predicciones explicables", "Guía A/B"]
+      },
+      {
+        "icon": "cluster",
+        "title": "Clustering y segmentación",
+        "desc": "Comprende tus clientes y productos con grupos basados en datos para targeting y personalización.",
+        "bullets": ["Personas de cliente", "Agrupación de productos", "Detección de anomalías"]
+      },
+      {
+        "icon": "rocket",
+        "title": "Automatización AI",
+        "desc": "Automatiza reportes manuales, limpieza de datos y flujos repetitivos para ahorrar horas cada semana.",
+        "bullets": ["Pipelines y dashboards", "Chequeos de calidad de datos", "Asistentes y bots de operaciones"]
+      }
+    ]
+  }
+}

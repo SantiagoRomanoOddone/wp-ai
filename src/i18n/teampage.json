@@ -1,0 +1,66 @@
+{
+  "teamPage": {
+    "sectionTitle": {
+      "kicker": {
+        "en": "Our team",
+        "es": "Nuestro equipo"
+      },
+      "title": {
+        "en": "Know the people behind SimpleCode",
+        "es": "Conoce a las personas detrás de SimpleCode"
+      },
+      "subtitle": {
+        "en": "Experienced data scientists and engineers who care about your success.",
+        "es": "Científicos de datos e ingenieros experimentados que se preocupan por tu éxito."
+      }
+    },
+    "teamCards": [
+      {
+        "name": {
+          "en": "Santiago Romano",
+          "es": "Santiago Romano"
+        },
+        "role": {
+          "en": "Founder • Data & AI Engineer",
+          "es": "Fundador • Ingeniero de Datos e IA"
+        },
+        "blurb": {
+          "en": "Developed ML systems for banking, HR, and retail. Passionate about practical AI that delivers measurable value.",
+          "es": "Desarrolló sistemas de ML para banca, RRHH y retail. Apasionado por la IA práctica que entrega valor medible."
+        },
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/santiagoromanooddone/",
+          "website": "https://www.santiagoro.com"
+        }
+      },
+      {
+        "name": {
+          "en": "Your Next Consultant",
+          "es": "Tu próximo consultor"
+        },
+        "role": {
+          "en": "ML Engineer",
+          "es": "Ingeniero de ML"
+        },
+        "blurb": {
+          "en": "Add short bio about expertise, industries, and approach.",
+          "es": "Agrega una breve biografía sobre experiencia, industrias y enfoque."
+        }
+      },
+      {
+        "name": {
+          "en": "Your Data Analyst",
+          "es": "Tu analista de datos"
+        },
+        "role": {
+          "en": "Data Analyst",
+          "es": "Analista de datos"
+        },
+        "blurb": {
+          "en": "Add short bio about analytics, dashboards, and insights.",
+          "es": "Agrega una breve biografía sobre análisis, dashboards e insights."
+        }
+      }
+    ]
+  }
+}
