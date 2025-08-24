@@ -8,8 +8,6 @@ import WhyCard from "../components/WhyCard";
 import CTA from "../components/CTA";
 import homepageData from "../i18n/homepage.json";
 
-
-
 function StatCard({ icon, title, desc }) {
   return (
     <div className="rounded-2xl border border-slate-200 p-4">
@@ -20,10 +18,9 @@ function StatCard({ icon, title, desc }) {
   );
 }
 
-function Hero({ onCTAClick, t }) {
+function Hero({ t, onNavigate }) {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-sky-600 via-sky-500 to-sky-400 opacity-10" />
       <Container className="grid gap-10 py-16 md:grid-cols-2 md:py-20 lg:py-24">
         <div className="flex flex-col justify-center">
           <Pill>{t.hero.tagline}</Pill>
@@ -33,38 +30,24 @@ function Hero({ onCTAClick, t }) {
           <p className="mt-4 max-w-prose text-base leading-7 text-slate-600">
             {t.hero.body}
           </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <button
-              onClick={onCTAClick}
+              onClick={() => onNavigate("contact")}
               className="rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500"
             >
               {t.hero.ctaPrimary}
             </button>
-            <a
-              href="#services"
+            <button
+              onClick={() => onNavigate("services")}
               className="rounded-full border border-sky-200 px-6 py-3 text-sm font-semibold text-sky-700 transition hover:bg-sky-50"
-              onClick={(e) => e.preventDefault()}
             >
               {t.hero.ctaSecondary}
-            </a>
-          </div>
-          <div className="mt-6 flex items-center gap-4 text-xs text-slate-500">
-            <div className="flex items-center gap-2">
-              <Icon name="shield" />
-              <span>{t.hero.features.privacy}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Icon name="time" />
-              <span>{t.hero.features.speed}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Icon name="chart" />
-              <span>{t.hero.features.roi}</span>
-            </div>
+            </button>
           </div>
         </div>
+
         <div className="relative">
-          <div className="absolute -inset-6 -z-10 rounded-3xl bg-sky-100 blur-2xl" />
           <div className="rounded-3xl border border-sky-100 bg-white p-6 shadow-sm">
             <div className="grid grid-cols-2 gap-4">
               {t.hero.stats.map((s, i) => (
@@ -78,15 +61,12 @@ function Hero({ onCTAClick, t }) {
   );
 }
 
-export default function HomePage({ onNavigate , language}) {
-  // const { language, toggleLanguage } = useLanguage();
+export default function HomePage({ onNavigate, language }) {
   const t = homepageData[language];
 
   return (
     <>
-
-      <Hero onCTAClick={() => onNavigate("contact")} t={t} />
-
+      <Hero t={t} onNavigate={onNavigate} />
       <section className="py-16 md:py-20" id="services">
         <Container>
           <SectionTitle
@@ -116,6 +96,7 @@ export default function HomePage({ onNavigate , language}) {
           </div>
         </Container>
       </section>
+
       <CTA onNavigate={onNavigate} t={t} />
     </>
   );
