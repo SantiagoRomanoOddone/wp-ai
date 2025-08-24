@@ -6,8 +6,9 @@ import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import WhyCard from "../components/WhyCard";
 import CTA from "../components/CTA";
-import { useLanguage } from "../LanguageProvider";
 import homepageData from "../i18n/homepage.json";
+
+
 
 function StatCard({ icon, title, desc }) {
   return (
@@ -77,21 +78,12 @@ function Hero({ onCTAClick, t }) {
   );
 }
 
-export default function HomePage({ onNavigate }) {
-  const { language, toggleLanguage } = useLanguage();
+export default function HomePage({ onNavigate , language}) {
+  // const { language, toggleLanguage } = useLanguage();
   const t = homepageData[language];
 
   return (
     <>
-      {/* 🌐 Botón de cambio de idioma */}
-      <div className="flex justify-end p-4">
-        <button
-          onClick={toggleLanguage}
-          className="rounded-lg border border-sky-200 px-3 py-1 text-sm text-sky-700 hover:bg-sky-50"
-        >
-          {language === "en" ? "ES" : "EN"}
-        </button>
-      </div>
 
       <Hero onCTAClick={() => onNavigate("contact")} t={t} />
 

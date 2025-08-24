@@ -1,13 +1,9 @@
-
-
 import SectionTitle from "../components/SectionTitle";
 import Container from "../components/Container";
 import Icon from "../components/Icon";
-import { useState } from "react";
 import contactPageData from "../i18n/contactpage.json";
 
 export default function ContactPage({ language }) {
-  const [lang, setLang] = useState(language || "en");
   const t = contactPageData.contactPage;
 
   function handleSubmit(e) {
@@ -23,20 +19,10 @@ export default function ContactPage({ language }) {
   return (
     <section className="py-12 md:py-16">
       <Container>
-        {/* Botón para cambiar idioma */}
-        <div className="mb-6">
-          <button
-            onClick={() => setLang(lang === "en" ? "es" : "en")}
-            className="rounded-full border border-sky-200 px-3 py-2 text-sm font-medium text-sky-700 transition hover:bg-sky-50"
-          >
-            {lang === "en" ? "ES" : "EN"}
-          </button>
-        </div>
-
         <SectionTitle
-          kicker={t.sectionTitle.kicker[lang]}
-          title={t.sectionTitle.title[lang]}
-          subtitle={t.sectionTitle.subtitle[lang]}
+          kicker={t.sectionTitle.kicker[language]}
+          title={t.sectionTitle.title[language]}
+          subtitle={t.sectionTitle.subtitle[language]}
         />
 
         <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -47,7 +33,7 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <div className="text-sm font-semibold text-slate-900">
-                  {t.contactInfo.emailLabel[lang]}
+                  {t.contactInfo.emailLabel[language]}
                 </div>
                 <a
                   href={`mailto:${t.contactInfo.emailValue}`}
@@ -64,7 +50,7 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <div className="text-sm font-semibold text-slate-900">
-                  {t.contactInfo.phoneLabel[lang]}
+                  {t.contactInfo.phoneLabel[language]}
                 </div>
                 <span className="text-sm text-slate-600">{t.contactInfo.phoneValue}</span>
               </div>
@@ -76,9 +62,9 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <div className="text-sm font-semibold text-slate-900">
-                  {t.contactInfo.basedInLabel[lang]}
+                  {t.contactInfo.basedInLabel[language]}
                 </div>
-                <span className="text-sm text-slate-600">{t.contactInfo.locationValue[lang]}</span>
+                <span className="text-sm text-slate-600">{t.contactInfo.locationValue[language]}</span>
               </div>
             </div>
           </div>
@@ -87,7 +73,7 @@ export default function ContactPage({ language }) {
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label className="text-xs font-medium text-slate-700">
-                  {t.form.name[lang]}
+                  {t.form.name[language]}
                 </label>
                 <input
                   name="name"
@@ -97,7 +83,7 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <label className="text-xs font-medium text-slate-700">
-                  {t.form.email[lang]}
+                  {t.form.email[language]}
                 </label>
                 <input
                   name="email"
@@ -108,7 +94,7 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <label className="text-xs font-medium text-slate-700">
-                  {t.form.company[lang]}
+                  {t.form.company[language]}
                 </label>
                 <input
                   name="company"
@@ -117,39 +103,39 @@ export default function ContactPage({ language }) {
               </div>
               <div>
                 <label className="text-xs font-medium text-slate-700">
-                  {t.form.budget[lang]}
+                  {t.form.budget[language]}
                 </label>
                 <select
                   name="budget"
                   className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none ring-sky-200 focus:ring"
                 >
-                  <option value="">{t.form.budgetOptions.select[lang]}</option>
-                  <option>{t.form.budgetOptions.under2000[lang]}</option>
-                  <option>{t.form.budgetOptions["2000to5000"][lang]}</option>
-                  <option>{t.form.budgetOptions["5000to10000"][lang]}</option>
-                  <option>{t.form.budgetOptions.over10000[lang]}</option>
+                  <option value="">{t.form.budgetOptions.select[language]}</option>
+                  <option>{t.form.budgetOptions.under2000[language]}</option>
+                  <option>{t.form.budgetOptions["2000to5000"][language]}</option>
+                  <option>{t.form.budgetOptions["5000to10000"][language]}</option>
+                  <option>{t.form.budgetOptions.over10000[language]}</option>
                 </select>
               </div>
               <div className="sm:col-span-2">
                 <label className="text-xs font-medium text-slate-700">
-                  {t.form.message[lang]}
+                  {t.form.message[language]}
                 </label>
                 <textarea
                   name="message"
                   rows={5}
                   required
                   className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none ring-sky-200 focus:ring"
-                  placeholder={t.form.messagePlaceholder[lang]}
+                  placeholder={t.form.messagePlaceholder[language]}
                 />
               </div>
             </div>
             <div className="mt-6 flex items-center justify-between">
-              <p className="text-xs text-slate-500">{t.form.consent[lang]}</p>
+              <p className="text-xs text-slate-500">{t.form.consent[language]}</p>
               <button
                 type="submit"
                 className="rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500"
               >
-                {t.form.submit[lang]}
+                {t.form.submit[language]}
               </button>
             </div>
           </form>

@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../components/SectionTitle";
 import Container from "../components/Container";
 import Icon from "../components/Icon";
@@ -7,23 +6,12 @@ import Icon from "../components/Icon";
 // Import translations JSON
 import translations from "../i18n/servicespage.json";
 
-export default function ServicesPage() {
-  const [language, setLanguage] = useState("en"); // 'en' or 'es'
+export default function ServicesPage({ language }) {
   const t = translations[language];
 
   return (
     <section className="py-12 md:py-16">
       <Container>
-        {/* Language toggle button */}
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={() => setLanguage(language === "en" ? "es" : "en")}
-            className="rounded-full border px-3 py-1 text-sm text-sky-700 hover:bg-sky-50"
-          >
-            {language === "en" ? "ES" : "EN"}
-          </button>
-        </div>
-
         {/* Section Title */}
         <SectionTitle kicker={t.kicker} title={t.title} subtitle={t.subtitle} />
 
@@ -52,4 +40,3 @@ export default function ServicesPage() {
     </section>
   );
 }
-
