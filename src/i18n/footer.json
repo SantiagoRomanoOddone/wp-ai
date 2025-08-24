@@ -1,0 +1,36 @@
+{
+  "en": {
+    "footer": {
+      "description": "Practical AI for small businesses. Forecast, automate, and grow—without the complexity.",
+      "companyTitle": "Company",
+      "home": "Home",
+      "services": "Services",
+      "team": "Team",
+      "contact": "Contact",
+      "contactTitle": "Contact",
+      "emailLabel": "Email",
+      "location": "Buenos Aires, Argentina",
+      "followTitle": "Follow",
+      "linkedin": "LinkedIn",
+      "website": "Website",
+      "rights": "All rights reserved."
+    }
+  },
+  "es": {
+    "footer": {
+      "description": "IA práctica para pequeñas empresas. Pronostica, automatiza y crece, sin complicaciones.",
+      "companyTitle": "Empresa",
+      "home": "Inicio",
+      "services": "Servicios",
+      "team": "Equipo",
+      "contact": "Contacto",
+      "contactTitle": "Contacto",
+      "emailLabel": "Correo",
+      "location": "Buenos Aires, Argentina",
+      "followTitle": "Redes",
+      "linkedin": "LinkedIn",
+      "website": "Website",
+      "rights": "Todos los derechos reservados."
+    }
+  }
+}
