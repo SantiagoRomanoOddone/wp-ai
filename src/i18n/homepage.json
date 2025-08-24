@@ -63,6 +63,11 @@
           "desc": "We speak business, not jargon. You’ll know what we’re building and why."
         }
       ]
+    },
+    "cta": {
+      "headline": "Ready to explore AI for your business?",
+      "body": "Get a free, no‑obligation consultation. We’ll discuss goals, budget, and options that make sense for you.",
+      "button": "Book a call"
     }
   },
   "es": {
@@ -129,6 +134,11 @@
           "desc": "Hablamos en términos de negocio, no jerga técnica. Sabrás qué construimos y por qué."
         }
       ]
+    },
+    "cta": {
+      "headline": "¿Listo para explorar la IA en tu negocio?",
+      "body": "Obtén una consulta gratuita y sin compromiso. Hablaremos sobre objetivos, presupuesto y opciones que tengan sentido para ti.",
+      "button": "Reservar una llamada"
     }
   }
 }

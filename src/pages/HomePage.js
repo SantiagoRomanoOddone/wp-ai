@@ -116,8 +116,7 @@ export default function HomePage({ onNavigate , language}) {
           </div>
         </Container>
       </section>
-
-      <CTA onNavigate={onNavigate} />
+      <CTA onNavigate={onNavigate} t={t} />
     </>
   );
 }
