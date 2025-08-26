@@ -1,60 +1,67 @@
+
 import React from "react";
 import Container from "../components/Container";
 import Pill from "../components/Pill";
-import Icon from "../components/Icon";
 import SectionTitle from "../components/SectionTitle";
-import ServiceCard from "../components/ServiceCard";
 import WhyCard from "../components/WhyCard";
 import CTA from "../components/CTA";
 import homepageData from "../i18n/homepage.json";
-
-function StatCard({ icon, title, desc }) {
-  return (
-    <div className="rounded-2xl border border-slate-200 p-4">
-      <Icon name={icon} className="h-6 w-6 text-sky-600" />
-      <div className="mt-2 text-sm font-semibold text-slate-900">{title}</div>
-      <div className="text-xs text-slate-600">{desc}</div>
-    </div>
-  );
-}
+import { motion } from "framer-motion";
 
 function Hero({ t, onNavigate }) {
   return (
-    <section className="relative overflow-hidden">
-      <Container className="grid gap-10 py-16 md:grid-cols-2 md:py-20 lg:py-24">
-        <div className="flex flex-col justify-center">
+    <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-sky-900 via-sky-800 to-sky-900 text-white">
+      {/* Floating animated orbs */}
+      <motion.div
+        animate={{ y: [0, 30, 0], opacity: [0.4, 0.7, 0.4] }}
+        transition={{ duration: 8, repeat: Infinity }}
+        className="absolute top-20 left-20 w-72 h-72 bg-sky-500/30 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ y: [0, -40, 0], opacity: [0.4, 0.7, 0.4] }}
+        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute bottom-20 right-20 w-96 h-96 bg-sky-400/30 rounded-full blur-3xl"
+      />
+
+      <Container className="relative grid gap-10 py-24 md:grid-cols-2 md:py-32 items-center">
+        {/* LEFT SIDE */}
+        <div className="flex flex-col justify-center space-y-6">
           <Pill>{t.hero.tagline}</Pill>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight">
             {t.hero.headline}
           </h1>
-          <p className="mt-4 max-w-prose text-base leading-7 text-slate-600">
-            {t.hero.body}
-          </p>
+          <p className="text-lg text-slate-200 max-w-xl">{t.hero.body}</p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="flex space-x-4 mt-6">
             <button
               onClick={() => onNavigate("contact")}
-              className="rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500"
+              className="rounded-2xl bg-sky-600 hover:bg-sky-700 text-white text-lg px-6 py-3"
             >
               {t.hero.ctaPrimary}
             </button>
             <button
               onClick={() => onNavigate("services")}
-              className="rounded-full border border-sky-200 px-6 py-3 text-sm font-semibold text-sky-700 transition hover:bg-sky-50"
+              className="rounded-2xl border border-sky-300 text-sky-100 hover:bg-white/10 text-lg px-6 py-3"
             >
-              {t.hero.ctaSecondary}
+              {t.hero.ctaSecondary} →
             </button>
+          </div>
+
+          <div className="mt-6 text-xs text-slate-300">
+            Trusted by innovative teams worldwide
           </div>
         </div>
 
-        <div className="relative">
-          <div className="rounded-3xl border border-sky-100 bg-white p-6 shadow-sm">
-            <div className="grid grid-cols-2 gap-4">
-              {t.hero.stats.map((s, i) => (
-                <StatCard key={i} icon={s.icon} title={s.title} desc={s.desc} />
-              ))}
-            </div>
-          </div>
+        {/* RIGHT SIDE → Brain image */}
+        <div className="flex justify-center">
+          <motion.img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/brain-3d-icon-download-in-png-blend-fbx-gltf-file-formats--mind-science-thinking-psychology-pack-logos-icons-9651892.png"
+            alt="AI Brain Illustration"
+            className="w-[420px] h-auto drop-shadow-2xl"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+          />
         </div>
       </Container>
     </section>
@@ -66,22 +73,10 @@ export default function HomePage({ onNavigate, language }) {
 
   return (
     <>
+      {/* HERO */}
       <Hero t={t} onNavigate={onNavigate} />
-      <section className="py-16 md:py-20" id="services">
-        <Container>
-          <SectionTitle
-            kicker={t.services.kicker}
-            title={t.services.title}
-            subtitle={t.services.subtitle}
-          />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {t.services.items.map((s, i) => (
-              <ServiceCard key={i} icon={s.icon} title={s.title} points={s.points} />
-            ))}
-          </div>
-        </Container>
-      </section>
 
+      {/* WHY SECTION */}
       <section className="bg-sky-50/50 py-16 md:py-20">
         <Container>
           <SectionTitle
@@ -97,6 +92,29 @@ export default function HomePage({ onNavigate, language }) {
         </Container>
       </section>
 
+      {/* SHOWCASE / HIGHLIGHT */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <SectionTitle
+            kicker="See the impact"
+            title="How AI transforms business outcomes"
+            subtitle="From inefficiency to insights in just weeks."
+          />
+          <div className="mt-10 flex flex-col items-center text-center">
+            <div className="rounded-2xl border border-sky-100 bg-white p-8 shadow-sm max-w-2xl">
+              <p className="text-lg text-slate-700">
+                “Before: Hours spent on manual analysis. After: Instant insights
+                and better decisions.”
+              </p>
+              <div className="mt-4 text-sm text-slate-500">
+                – Example client story (replace with your real case)
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* FINAL CTA */}
       <CTA onNavigate={onNavigate} t={t} />
     </>
   );
