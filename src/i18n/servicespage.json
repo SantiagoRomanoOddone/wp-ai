@@ -28,7 +28,13 @@
         "desc": "Automate manual reporting, data cleanup, and repetitive workflows to save hours each week.",
         "bullets": ["Pipelines & dashboards", "Data quality checks", "Ops assistants & bots"]
       }
-    ]
+    ],
+    "tailored": {
+      "kicker": "Tailored Solutions",
+      "title": "Your unique challenges, handled",
+      "subtitle": "If your challenge isn't listed, we’ll craft a solution just for you.",
+      "body": "We collaborate closely to understand your business needs and design AI solutions that fit your goals and workflow."
+    }
   },
   "es": {
     "kicker": "Servicios",
@@ -43,13 +49,13 @@
       },
       {
         "icon": "spark",
-        "title": "Predicción y scoring",
+        "title": "Predicción y Scoring",
         "desc": "Prioriza leads, identifica riesgo de churn y estima el aumento de conversión para enfocar esfuerzos donde importa.",
         "bullets": ["Modelos de clasificación y uplift", "Predicciones explicables", "Guía A/B"]
       },
       {
         "icon": "cluster",
-        "title": "Clustering y segmentación",
+        "title": "Clustering y Segmentación",
         "desc": "Comprende tus clientes y productos con grupos basados en datos para targeting y personalización.",
         "bullets": ["Personas de cliente", "Agrupación de productos", "Detección de anomalías"]
       },
@@ -59,6 +65,12 @@
         "desc": "Automatiza reportes manuales, limpieza de datos y flujos repetitivos para ahorrar horas cada semana.",
         "bullets": ["Pipelines y dashboards", "Chequeos de calidad de datos", "Asistentes y bots de operaciones"]
       }
-    ]
+    ],
+    "tailored": {
+      "kicker": "Soluciones a Medida",
+      "title": "Tus desafíos únicos, resueltos",
+      "subtitle": "Si tu desafío no está listado, podemos diseñar una solución especialmente para ti.",
+      "body": "Colaboramos estrechamente para entender las necesidades de tu negocio y diseñar soluciones de IA que se adapten a tus objetivos y flujo de trabajo."
+    }
   }
 }

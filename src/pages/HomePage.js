@@ -1,5 +1,4 @@
-
-import React from "react";
+import React, { useMemo } from "react";
 import Container from "../components/Container";
 import Pill from "../components/Pill";
 import SectionTitle from "../components/SectionTitle";
@@ -8,6 +7,76 @@ import CTA from "../components/CTA";
 import homepageData from "../i18n/homepage.json";
 import { motion } from "framer-motion";
 
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Line } from "@react-three/drei";
+
+// 🔹 Neural Network Web Component
+function NeuralNetworkWeb({ nodes = 80, radius = 1.5 }) {
+  const positions = useMemo(() => {
+    const arr = [];
+    for (let i = 0; i < nodes; i++) {
+      const theta = Math.random() * 2 * Math.PI;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const r = radius * (0.8 + Math.random() * 0.2); // small jitter
+      arr.push([
+        r * Math.sin(phi) * Math.cos(theta),
+        r * Math.sin(phi) * Math.sin(theta),
+        r * Math.cos(phi),
+      ]);
+    }
+    return arr;
+  }, [nodes, radius]);
+
+  return (
+    <group>
+      {/* Nodes */}
+      {positions.map((pos, i) => (
+        <mesh key={i} position={pos}>
+          <sphereGeometry args={[0.04, 8, 8]} />
+          <meshStandardMaterial emissive="#38bdf8" emissiveIntensity={2} />
+        </mesh>
+      ))}
+
+      {/* Connections (sparse) */}
+      {positions.map((a, i) =>
+        positions.map((b, j) =>
+          i < j && Math.random() < 0.04 ? (
+            <Line
+              key={`${i}-${j}`}
+              points={[a, b]}
+              color="#38bdf8"
+              opacity={0.25}
+              transparent
+              lineWidth={1}
+            />
+          ) : null
+        )
+      )}
+    </group>
+  );
+}
+
+// 🔹 Hero 3D Model wrapper
+function Hero3DModel() {
+  return (
+    <Canvas
+      style={{ width: 400, height: 400 }}
+      gl={{ alpha: true }} // transparent background
+    >
+      {/* Lights */}
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[5, 5, 5]} intensity={1} />
+
+      {/* Neural Network */}
+      <NeuralNetworkWeb nodes={90} radius={1.5} />
+
+      {/* Controls */}
+      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.8} />
+    </Canvas>
+  );
+}
+
+// 🔹 Hero Section
 function Hero({ t, onNavigate }) {
   return (
     <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-sky-900 via-sky-800 to-sky-900 text-white">
@@ -52,22 +121,16 @@ function Hero({ t, onNavigate }) {
           </div>
         </div>
 
-        {/* RIGHT SIDE → Brain image */}
-        <div className="flex justify-center">
-          <motion.img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/brain-3d-icon-download-in-png-blend-fbx-gltf-file-formats--mind-science-thinking-psychology-pack-logos-icons-9651892.png"
-            alt="AI Brain Illustration"
-            className="w-[420px] h-auto drop-shadow-2xl"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2 }}
-          />
+        {/* RIGHT SIDE - Neural Network */}
+        <div className="lg:w-1/2 flex justify-center mt-12 lg:mt-0">
+          <Hero3DModel />
         </div>
       </Container>
     </section>
   );
 }
 
+// 🔹 Main HomePage
 export default function HomePage({ onNavigate, language }) {
   const t = homepageData[language];
 
@@ -83,6 +146,9 @@ export default function HomePage({ onNavigate, language }) {
             kicker={t.why.kicker}
             title={t.why.title}
             subtitle={t.why.subtitle}
+            kickerClassName="text-lg md:text-xl font-semibold text-sky-600"
+            titleClassName="text-3xl md:text-4xl lg:text-5xl font-extrabold"
+            subtitleClassName="text-sm md:text-base text-slate-600"
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {t.why.items.map((w, i) => (
@@ -92,30 +158,47 @@ export default function HomePage({ onNavigate, language }) {
         </Container>
       </section>
 
-      {/* SHOWCASE / HIGHLIGHT */}
-      <section className="py-16 md:py-20">
+      {/* IMPACT / SHOWCASE SECTION */}
+      <section className="py-12 md:py-16 bg-sky-50/50">
         <Container>
           <SectionTitle
-            kicker="See the impact"
-            title="How AI transforms business outcomes"
-            subtitle="From inefficiency to insights in just weeks."
+            kicker={t.impact.kicker}
+            title={t.impact.title}
+            subtitle={t.impact.subtitle}
+            kickerClassName="text-lg md:text-xl font-semibold text-sky-600"
+            titleClassName="text-3xl md:text-4xl lg:text-5xl font-extrabold"
+            subtitleClassName="text-sm md:text-base text-slate-600"
           />
-          <div className="mt-10 flex flex-col items-center text-center">
-            <div className="rounded-2xl border border-sky-100 bg-white p-8 shadow-sm max-w-2xl">
-              <p className="text-lg text-slate-700">
-                “Before: Hours spent on manual analysis. After: Instant insights
-                and better decisions.”
-              </p>
-              <div className="mt-4 text-sm text-slate-500">
-                – Example client story (replace with your real case)
+          <div className="mt-6 md:mt-10 grid gap-6 md:grid-cols-3 text-center">
+            {t.impact.items.map((item, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-sky-100 bg-white p-6 md:p-8 shadow-sm"
+              >
+                <div className="font-semibold text-lg">{item.title}</div>
+                <p className="mt-2 text-sm text-slate-500">{item.desc}</p>
               </div>
-            </div>
+            ))}
+          </div>
+
+          {/* CTA BUTTON TO SERVICES */}
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => onNavigate("services")}
+              className="rounded-2xl bg-sky-600 hover:bg-sky-700 text-white text-lg px-6 py-3"
+            >
+              {t.hero.ctaSecondary}
+            </button>
           </div>
         </Container>
       </section>
+
 
       {/* FINAL CTA */}
       <CTA onNavigate={onNavigate} t={t} />
     </>
   );
 }
+
+
+

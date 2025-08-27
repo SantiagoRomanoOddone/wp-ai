@@ -1,144 +1,128 @@
 {
   "en": {
     "hero": {
-      "tagline": "AI & Machine Learning for Small Business",
-      "headline": "Build practical AI that grows your business",
-      "body": "SimpleCode helps startups and small enterprises turn data into decisions. Forecast demand, automate workflows, and discover new opportunities with friendly, expert guidance.",
+      "tagline": "AI & Machine Learning made practical",
+      "headline": "Turn your data into decisions with expert guidance",
+      "body": "Work directly with experienced data scientists and ML engineers to solve real business challenges. From forecasting and classification to segmentation and automation, we deliver practical AI solutions that bring measurable results.",
       "ctaPrimary": "Talk to an Expert",
-      "ctaSecondary": "View Services",
+      "ctaSecondary": "Explore Services",
       "features": {
-        "privacy": "Privacy-first, transparent",
-        "speed": "Quick wins in weeks",
-        "roi": "ROI-focused delivery"
+        "expertise": "Hands-on expertise",
+        "agile": "Fast, iterative delivery",
+        "impact": "Focused on measurable results"
       },
       "stats": [
-        { "icon": "chart", "title": "Forecasting", "desc": "Predict sales & demand." },
-        { "icon": "cluster", "title": "Segmentation", "desc": "Understand your customers." },
-        { "icon": "spark", "title": "Prediction", "desc": "Score leads & churn." },
-        { "icon": "rocket", "title": "Automation", "desc": "Save hours every week." }
-      ]
-    },
-    "services": {
-      "kicker": "What we do",
-      "title": "Clear, practical AI services",
-      "subtitle": "We design solutions that match your size, budget, and goals—no unnecessary complexity.",
-      "items": [
-        {
-          "icon": "chart",
-          "title": "Forecasting",
-          "points": ["Sales & demand", "Inventory planning", "Cash flow"]
-        },
-        {
-          "icon": "spark",
-          "title": "Prediction",
-          "points": ["Lead scoring", "Churn risk", "Conversion uplift"]
-        },
-        {
-          "icon": "cluster",
-          "title": "Clustering",
-          "points": ["Customer segments", "Product groups", "Anomaly detection"]
-        },
-        {
-          "icon": "rocket",
-          "title": "AI Automation",
-          "points": ["Reporting bots", "Data pipelines", "Ops assistance"]
-        }
+        { "icon": "chart", "title": "Forecasting", "desc": "Predict sales and demand accurately." },
+        { "icon": "cluster", "title": "Segmentation", "desc": "Understand and group your customers." },
+        { "icon": "spark", "title": "Prediction", "desc": "Score leads, churn risk, and opportunities." },
+        { "icon": "rocket", "title": "Automation", "desc": "Streamline workflows and save time." }
       ]
     },
     "why": {
-      "kicker": "Why SimpleCode",
-      "title": "Built for small businesses",
-      "subtitle": "Boutique attention, fast iterations, and measurable results.",
+      "kicker": "Why work with us",
+      "title": "Expert-driven AI, clear and practical",
+      "subtitle": "Close collaboration, agile solutions, and measurable outcomes.",
       "items": [
         {
-          "title": "Small-biz first",
-          "desc": "Solutions sized to your team, budget, and timeline—no heavy enterprise bloat."
+          "title": "Direct collaboration",
+          "desc": "Work side-by-side with experienced professionals. Frequent feedback ensures solutions that truly fit your needs."
         },
         {
-          "title": "ROI oriented",
-          "desc": "We prioritize quick wins and compounding value you can measure."
+          "title": "Agile & practical",
+          "desc": "We prioritize fast iterations and high-impact solutions without unnecessary complexity."
         },
         {
-          "title": "Clear & friendly",
-          "desc": "We speak business, not jargon. You’ll know what we’re building and why."
+          "title": "Experience you can trust",
+          "desc": "Our team brings deep knowledge in ML, AI, and MLOps, ensuring projects succeed from prototype to production."
+        }
+      ]
+    },
+    "impact": {
+      "kicker": "Discover the possibilities",
+      "title": "AI can transform your business processes",
+      "subtitle": "From smarter decisions to automated workflows.",
+      "items": [
+        {
+          "title": "Make data-driven decisions",
+          "desc": "Use AI to turn your data into actionable insights."
+        },
+        {
+          "title": "Automate repetitive tasks",
+          "desc": "Save time and reduce errors with intelligent automation."
+        },
+        {
+          "title": "Understand your customers",
+          "desc": "Discover patterns and segments to improve targeting and retention."
         }
       ]
     },
     "cta": {
-      "headline": "Ready to explore AI for your business?",
-      "body": "Get a free, no‑obligation consultation. We’ll discuss goals, budget, and options that make sense for you.",
+      "headline": "Ready to leverage AI for your business?",
+      "body": "Schedule a free, no‑obligation consultation. We’ll discuss your goals, challenges, and how AI can deliver measurable results.",
       "button": "Book a call"
     }
   },
   "es": {
     "hero": {
-      "tagline": "IA y Machine Learning para pequeñas empresas",
-      "headline": "Crea IA práctica que haga crecer tu empresa",
-      "body": "SimpleCode ayuda a startups y pequeñas empresas a convertir datos en decisiones. Pronostica la demanda, automatiza flujos de trabajo y descubre nuevas oportunidades con asesoría experta y cercana.",
+      "tagline": "IA y Machine Learning prácticos",
+      "headline": "Convierte tus datos en decisiones con expertos",
+      "body": "Trabaja directamente con científicos de datos e ingenieros de ML experimentados para resolver desafíos reales de negocio. Desde pronósticos y clasificación hasta segmentación y automatización, entregamos soluciones de IA prácticas que generan resultados medibles.",
       "ctaPrimary": "Hablar con un experto",
-      "ctaSecondary": "Ver servicios",
+      "ctaSecondary": "Explorar Servicios",
       "features": {
-        "privacy": "Privacidad primero, con transparencia",
-        "speed": "Resultados rápidos en semanas",
-        "roi": "Entrega enfocada en ROI"
+        "expertise": "Experiencia práctica",
+        "agile": "Entrega ágil e iterativa",
+        "impact": "Enfocados en resultados medibles"
       },
       "stats": [
-        { "icon": "chart", "title": "Pronósticos", "desc": "Predecir ventas y demanda." },
-        { "icon": "cluster", "title": "Segmentación", "desc": "Comprende a tus clientes." },
-        { "icon": "spark", "title": "Predicción", "desc": "Calificar leads y riesgo de abandono." },
-        { "icon": "rocket", "title": "Automatización", "desc": "Ahorra horas cada semana." }
-      ]
-    },
-    "services": {
-      "kicker": "Qué hacemos",
-      "title": "Servicios de IA claros y prácticos",
-      "subtitle": "Diseñamos soluciones acordes a tu tamaño, presupuesto y metas—sin complejidad innecesaria.",
-      "items": [
-        {
-          "icon": "chart",
-          "title": "Pronósticos",
-          "points": ["Ventas y demanda", "Planificación de inventario", "Flujo de caja"]
-        },
-        {
-          "icon": "spark",
-          "title": "Predicción",
-          "points": ["Puntaje de leads", "Riesgo de abandono", "Incremento de conversión"]
-        },
-        {
-          "icon": "cluster",
-          "title": "Clustering",
-          "points": ["Segmentos de clientes", "Grupos de productos", "Detección de anomalías"]
-        },
-        {
-          "icon": "rocket",
-          "title": "Automatización con IA",
-          "points": ["Bots de reportes", "Pipelines de datos", "Asistencia operativa"]
-        }
+        { "icon": "chart", "title": "Pronósticos", "desc": "Predecimos ventas y demanda con precisión." },
+        { "icon": "cluster", "title": "Segmentación", "desc": "Comprende y agrupa a tus clientes." },
+        { "icon": "spark", "title": "Predicción", "desc": "Califica leads, riesgo de abandono y oportunidades." },
+        { "icon": "rocket", "title": "Automatización", "desc": "Optimiza flujos de trabajo y ahorra tiempo." }
       ]
     },
     "why": {
-      "kicker": "Por qué SimpleCode",
-      "title": "Hecho para pequeñas empresas",
-      "subtitle": "Atención boutique, iteraciones rápidas y resultados medibles.",
+      "kicker": "Por qué elegirnos",
+      "title": "IA guiada por expertos, clara y práctica",
+      "subtitle": "Colaboración cercana, soluciones ágiles y resultados medibles.",
       "items": [
         {
-          "title": "Pensado primero para pymes",
-          "desc": "Soluciones acordes a tu equipo, presupuesto y tiempos—sin el peso del enterprise."
+          "title": "Colaboración directa",
+          "desc": "Trabaja codo a codo con profesionales experimentados. La retroalimentación constante asegura soluciones que realmente se ajustan a tus necesidades."
         },
         {
-          "title": "Orientados al ROI",
-          "desc": "Priorizamos resultados rápidos y valor acumulativo que puedes medir."
+          "title": "Ágil y práctico",
+          "desc": "Priorizamos iteraciones rápidas y soluciones de alto impacto, sin complejidad innecesaria."
         },
         {
-          "title": "Claros y cercanos",
-          "desc": "Hablamos en términos de negocio, no jerga técnica. Sabrás qué construimos y por qué."
+          "title": "Experiencia confiable",
+          "desc": "Nuestro equipo aporta profundo conocimiento en ML, IA y MLOps, garantizando el éxito del proyecto desde el prototipo hasta la producción."
+        }
+      ]
+    },
+    "impact": {
+      "kicker": "Descubre las posibilidades",
+      "title": "La IA puede transformar tus procesos de negocio",
+      "subtitle": "De decisiones más inteligentes a flujos de trabajo automatizados.",
+      "items": [
+        {
+          "title": "Toma decisiones basadas en datos",
+          "desc": "Usa IA para convertir tus datos en insights accionables."
+        },
+        {
+          "title": "Automatiza tareas repetitivas",
+          "desc": "Ahorra tiempo y reduce errores con automatización inteligente."
+        },
+        {
+          "title": "Comprende a tus clientes",
+          "desc": "Descubre patrones y segmentos para mejorar tu targeting y retención."
         }
       ]
     },
     "cta": {
-      "headline": "¿Listo para explorar la IA en tu negocio?",
-      "body": "Obtén una consulta gratuita y sin compromiso. Hablaremos sobre objetivos, presupuesto y opciones que tengan sentido para ti.",
-      "button": "Reservar una llamada"
+      "headline": "¿Listo para aprovechar la IA en tu negocio?",
+      "body": "Agenda una consulta gratuita y sin compromiso. Hablaremos de tus objetivos, desafíos y cómo la IA puede generar resultados medibles.",
+      "button": "Reservar llamada"
     }
   }
 }
