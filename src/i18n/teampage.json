@@ -6,12 +6,12 @@
         "es": "Nuestro equipo"
       },
       "title": {
-        "en": "Know the people behind SimpleCode",
+        "en": "Meet the people behind SimpleCode",
         "es": "Conoce a las personas detrás de SimpleCode"
       },
       "subtitle": {
-        "en": "Experienced data scientists and engineers who care about your success.",
-        "es": "Científicos de datos e ingenieros experimentados que se preocupan por tu éxito."
+        "en": "Experienced professionals passionate about AI and real business impact.",
+        "es": "Profesionales experimentados apasionados por la IA y el impacto real en los negocios."
       }
     },
     "teamCards": [
@@ -21,17 +21,18 @@
           "es": "Santiago Romano"
         },
         "role": {
-          "en": "Founder • Data & AI Engineer",
-          "es": "Fundador • Ingeniero de Datos e IA"
+          "en": "ML Engineer & Data Scientist",
+          "es": "Ingeniero de ML y Científico de Datos"
         },
         "blurb": {
-          "en": "Developed ML systems for banking, HR, and retail. Passionate about practical AI that delivers measurable value.",
-          "es": "Desarrolló sistemas de ML para banca, RRHH y retail. Apasionado por la IA práctica que entrega valor medible."
+          "en": "Developed ML systems for leading tech companies, banking, HR, and retail. Passionate about turning data into actionable insights and measurable value.",
+          "es": "Desarrolló sistemas de ML para empresas líderes en tecnología, banca, RRHH y retail. Apasionado por convertir datos en insights accionables y valor medible."
         },
         "links": {
           "linkedin": "https://www.linkedin.com/in/santiagoromanooddone/",
           "website": "https://www.santiagoro.com"
-        }
+        },
+        "image": "../src/assets/hero.jpg"
       },
       {
         "name": {
@@ -39,8 +40,8 @@
           "es": "Tu próximo consultor"
         },
         "role": {
-          "en": "ML Engineer",
-          "es": "Ingeniero de ML"
+          "en": "AI & Data Specialist",
+          "es": "Especialista en IA y Datos"
         },
         "blurb": {
           "en": "Add short bio about expertise, industries, and approach.",
@@ -53,8 +54,8 @@
           "es": "Tu analista de datos"
         },
         "role": {
-          "en": "Data Analyst",
-          "es": "Analista de datos"
+          "en": "Analytics & Insights",
+          "es": "Analítica e Insights"
         },
         "blurb": {
           "en": "Add short bio about analytics, dashboards, and insights.",
