@@ -1,15 +1,15 @@
 {
   "en": {
     "hero": {
-      "tagline": "AI & Machine Learning made practical",
-      "headline": "Turn your data into decisions with expert guidance",
-      "body": "Work directly with experienced data scientists and ML engineers to solve real business challenges. From forecasting and classification to segmentation and automation, we deliver practical AI solutions that bring measurable results.",
-      "ctaPrimary": "Talk to an Expert",
+      "tagline": "AI made simple, useful, and tailored to you",
+      "headline": "Turn your data into decisions with personalized guidance",
+      "body": "Work side-by-side with a dedicated Data Scientist to solve your business challenges. Through close collaboration, fast iterations, and clear communication, we build AI solutions that truly fit your needs and deliver measurable results.",
+      "ctaPrimary": "Start the Conversation",
       "ctaSecondary": "Explore Services",
       "features": {
-        "expertise": "Hands-on expertise",
+        "experience": "Hands-on experience",
         "agile": "Fast, iterative delivery",
-        "impact": "Focused on measurable results"
+        "results": "Focused on your results"
       },
       "stats": [
         { "icon": "chart", "title": "Forecasting", "desc": "Predict sales and demand accurately." },
@@ -20,20 +20,21 @@
     },
     "why": {
       "kicker": "Why work with us",
-      "title": "Expert-driven AI, clear and practical",
-      "subtitle": "Close collaboration, agile solutions, and measurable outcomes.",
+      "title": "Solutions built for your business",
+      "subtitle": "We deliver practical, high-impact results through a direct and transparent approach.",
+
       "items": [
         {
           "title": "Direct collaboration",
-          "desc": "Work side-by-side with experienced professionals. Frequent feedback ensures solutions that truly fit your needs."
+          "desc": "Work closely with your consultant. Frequent feedback and open communication ensure solutions are tailored to your needs."
         },
         {
           "title": "Agile & practical",
           "desc": "We prioritize fast iterations and high-impact solutions without unnecessary complexity."
         },
         {
-          "title": "Experience you can trust",
-          "desc": "Our team brings deep knowledge in ML, AI, and MLOps, ensuring projects succeed from prototype to production."
+          "title": "Proven experience",
+          "desc": "With real-world experience in ML, AI, and MLOps, we guide projects from prototype to production with care and reliability."
         }
       ]
     },
@@ -44,7 +45,7 @@
       "items": [
         {
           "title": "Make data-driven decisions",
-          "desc": "Use AI to turn your data into actionable insights."
+          "desc": "Turn your data into actionable insights with our guidance."
         },
         {
           "title": "Automate repetitive tasks",
@@ -58,24 +59,24 @@
     },
     "cta": {
       "headline": "Ready to leverage AI for your business?",
-      "body": "Schedule a free, no‑obligation consultation. We’ll discuss your goals, challenges, and how AI can deliver measurable results.",
-      "button": "Book a call"
+      "body": "Schedule a free, no-obligation consultation. We’ll listen to your goals and challenges, and explore how AI can deliver measurable improvements.",
+      "button": "Book a Call"
     }
   },
   "es": {
     "hero": {
-      "tagline": "IA y Machine Learning prácticos",
-      "headline": "Convierte tus datos en decisiones con expertos",
-      "body": "Trabaja directamente con científicos de datos e ingenieros de ML experimentados para resolver desafíos reales de negocio. Desde pronósticos y clasificación hasta segmentación y automatización, entregamos soluciones de IA prácticas que generan resultados medibles.",
-      "ctaPrimary": "Hablar con un experto",
+      "tagline": "IA simple, útil y a tu medida",
+      "headline": "Convierte tus datos en decisiones con orientación personalizada",
+      "body": "Trabaja codo a codo con un Científico de Datos dedicado para resolver los desafíos de tu empresa. Con colaboración cercana, iteraciones rápidas y comunicación clara, construimos soluciones de IA que realmente se ajustan a tus necesidades y generan resultados medibles.",
+      "ctaPrimary": "Inicia la Conversación",
       "ctaSecondary": "Explorar Servicios",
       "features": {
-        "expertise": "Experiencia práctica",
+        "experience": "Experiencia práctica",
         "agile": "Entrega ágil e iterativa",
-        "impact": "Enfocados en resultados medibles"
+        "results": "Enfocados en tus resultados"
       },
       "stats": [
-        { "icon": "chart", "title": "Pronósticos", "desc": "Predecimos ventas y demanda con precisión." },
+        { "icon": "chart", "title": "Pronósticos", "desc": "Predice ventas y demanda con precisión." },
         { "icon": "cluster", "title": "Segmentación", "desc": "Comprende y agrupa a tus clientes." },
         { "icon": "spark", "title": "Predicción", "desc": "Califica leads, riesgo de abandono y oportunidades." },
         { "icon": "rocket", "title": "Automatización", "desc": "Optimiza flujos de trabajo y ahorra tiempo." }
@@ -83,20 +84,20 @@
     },
     "why": {
       "kicker": "Por qué elegirnos",
-      "title": "IA guiada por expertos, clara y práctica",
-      "subtitle": "Colaboración cercana, soluciones ágiles y resultados medibles.",
+      "title": "Soluciones hechas para tu negocio",
+      "subtitle": "Entregamos resultados prácticos y de alto impacto con un enfoque directo y transparente.",
       "items": [
         {
           "title": "Colaboración directa",
-          "desc": "Trabaja codo a codo con profesionales experimentados. La retroalimentación constante asegura soluciones que realmente se ajustan a tus necesidades."
+          "desc": "Trabaja de cerca con tu consultor. La retroalimentación constante y la comunicación abierta aseguran soluciones hechas a medida."
         },
         {
           "title": "Ágil y práctico",
           "desc": "Priorizamos iteraciones rápidas y soluciones de alto impacto, sin complejidad innecesaria."
         },
         {
-          "title": "Experiencia confiable",
-          "desc": "Nuestro equipo aporta profundo conocimiento en ML, IA y MLOps, garantizando el éxito del proyecto desde el prototipo hasta la producción."
+          "title": "Experiencia comprobada",
+          "desc": "Con experiencia práctica en ML, IA y MLOps, guiamos los proyectos desde el prototipo hasta la producción con dedicación y confianza."
         }
       ]
     },
@@ -107,7 +108,7 @@
       "items": [
         {
           "title": "Toma decisiones basadas en datos",
-          "desc": "Usa IA para convertir tus datos en insights accionables."
+          "desc": "Convierte tus datos en insights accionables con nuestra orientación."
         },
         {
           "title": "Automatiza tareas repetitivas",
@@ -121,8 +122,8 @@
     },
     "cta": {
       "headline": "¿Listo para aprovechar la IA en tu negocio?",
-      "body": "Agenda una consulta gratuita y sin compromiso. Hablaremos de tus objetivos, desafíos y cómo la IA puede generar resultados medibles.",
-      "button": "Reservar llamada"
+      "body": "Agenda una consulta gratuita y sin compromiso. Escucharemos tus objetivos y desafíos, y veremos cómo la IA puede generar mejoras reales para tu empresa.",
+      "button": "Reservar Llamada"
     }
   }
 }

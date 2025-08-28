@@ -116,9 +116,9 @@ function Hero({ t, onNavigate }) {
             </button>
           </div>
 
-          <div className="mt-6 text-xs text-slate-300">
+          {/* <div className="mt-6 text-xs text-slate-300">
             Trusted by innovative teams worldwide
-          </div>
+          </div> */}
         </div>
 
         {/* RIGHT SIDE - Neural Network */}
