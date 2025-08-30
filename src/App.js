@@ -6,8 +6,6 @@ import HomePage from "./pages/HomePage";
 import TeamPage from "./pages/TeamPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
-
-import homepageData from "./i18n/homepage.json";
 import footerData from "./i18n/footer.json";
 
 export default function App() {

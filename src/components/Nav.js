@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Container from "./Container";
+import Logo from "../assets/SimpleCodeLogo.png";
 
 const brandGradient = "bg-gradient-to-r from-sky-600 to-sky-500";
 
@@ -16,7 +17,14 @@ export default function Nav({ current, onNavigate, language, onLanguageChange })
     <header className="sticky top-0 z-40 w-full border-b border-sky-100/80 bg-white/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className={`h-8 w-8 rounded-xl ${brandGradient}`} />
+          {/* Replaced gradient box with local image */}
+          <img
+            src={Logo}
+            alt="SimplePilot logo"
+            className="h-8 w-8 rounded-xl object-cover"
+            loading="lazy"
+          />
+
           <div className="text-lg font-semibold tracking-tight text-slate-900">SimplePilot</div>
         </div>
 
