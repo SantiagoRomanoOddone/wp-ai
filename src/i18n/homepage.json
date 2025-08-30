@@ -57,6 +57,17 @@
         }
       ]
     },
+    "how": {
+      "kicker": "Our Approach",
+      "title": "How We Help You Succeed",
+      "steps": [
+        { "icon": "discovery", "title": "Discovery Call", "desc": "Understand your goals, challenges, and opportunities.", "arrow": true },
+        { "icon": "lightbulb-ai", "title": "AI & Data Consultation", "desc": "Identify where AI, ML or automation will make the biggest impact.", "arrow": true },
+        { "icon": "map-plan", "title": "Tailored Plan", "desc": "Craft a roadmap—from models to digital agents—built for your needs.", "arrow": true },
+        { "icon": "implementation", "title": "Implementation", "desc": "Seamlessly integrate your AI and ML solutions into workflows.", "arrow": true },
+        { "icon": "support", "title": "Ongoing Support", "desc": "Maintain, monitor, and optimize for long-term success.", "arrow": false }
+      ]
+    },
     "cta": {
       "headline": "Ready to leverage AI for your business?",
       "body": "Schedule a free, no-obligation consultation. We’ll listen to your goals and challenges, and explore how AI can deliver measurable improvements.",
@@ -118,6 +129,17 @@
           "title": "Comprende a tus clientes",
           "desc": "Descubre patrones y segmentos para mejorar tu targeting y retención."
         }
+      ]
+    },
+    "how": {
+      "kicker": "Nuestro Enfoque",
+      "title": "Cómo Te Ayudamos a Tener Éxito",
+      "steps": [
+        { "icon": "discovery", "title": "Llamada de Descubrimiento", "desc": "Entiende tus objetivos, desafíos y oportunidades.", "arrow": true },
+        { "icon": "lightbulb-ai", "title": "Consulta de IA & Datos", "desc": "Detecta dónde IA, ML o automatización aporta alto impacto.", "arrow": true },
+        { "icon": "map-plan", "title": "Plan Personalizado", "desc": "Diseña la hoja de ruta desde modelos hasta agentes digitales.", "arrow": true },
+        { "icon": "implementation", "title": "Implementación", "desc": "Integra sin esfuerzo tus soluciones de IA y ML en procesos.", "arrow": true },
+        { "icon": "support", "title": "Soporte Continuo", "desc": "Mantén, monitorea y optimiza para éxito a largo plazo.", "arrow": false }
       ]
     },
     "cta": {

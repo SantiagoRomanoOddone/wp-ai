@@ -4,6 +4,7 @@ import Pill from "../components/Pill";
 import SectionTitle from "../components/SectionTitle";
 import WhyCard from "../components/WhyCard";
 import CTA from "../components/CTA";
+import HowSection from "../components/HowSection";
 import homepageData from "../i18n/homepage.json";
 import { motion } from "framer-motion";
 
@@ -180,9 +181,16 @@ export default function HomePage({ onNavigate, language }) {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
 
-          {/* CTA BUTTON TO SERVICES */}
-          <div className="mt-10 flex justify-center">
+      {/* HOW WE HELP SECTION */}
+      <HowSection data={t} />
+
+      {/* CTA BUTTON TO SERVICES */}
+      <section className="py-12 bg-sky-50/50">
+        <Container>
+          <div className="flex justify-center">
             <button
               onClick={() => onNavigate("services")}
               className="rounded-2xl bg-sky-600 hover:bg-sky-700 text-white text-lg px-6 py-3"
@@ -193,12 +201,8 @@ export default function HomePage({ onNavigate, language }) {
         </Container>
       </section>
 
-
       {/* FINAL CTA */}
       <CTA onNavigate={onNavigate} t={t} />
     </>
   );
 }
-
-
-
