@@ -13,7 +13,7 @@ export default function ContactPage({ language }) {
     const body = encodeURIComponent(
       `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nMessage: ${data.message}`
     );
-    window.location.href = `mailto:contact@simplecode.ai?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@simplepilot.ai?subject=${subject}&body=${body}`;
   }
 
   return (

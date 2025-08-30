@@ -15,8 +15,19 @@ export default function TeamPage({ language }) {
           subtitle={t.sectionTitle.subtitle[language]}
         />
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {t.teamCards.map((member, i) => (
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+            {t.teamCards.slice(0, 2).map((member, i) => (
+              <TeamCard
+                key={i}
+                name={member.name[language]}
+                role={member.role[language]}
+                blurb={member.blurb[language]}
+                links={member.links}
+              />
+            ))}
+          </div>
+          {/* <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
+          {/* {t.teamCards.map((member, i) => (
             <TeamCard
               key={i}
               name={member.name[language]}
@@ -24,8 +35,8 @@ export default function TeamPage({ language }) {
               blurb={member.blurb[language]}
               links={member.links}
             />
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
       </Container>
     </section>
   );

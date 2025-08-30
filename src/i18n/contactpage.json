@@ -9,7 +9,7 @@
       "emailLabel": { "en": "Email", "es": "Correo electrónico" },
       "phoneLabel": { "en": "Phone", "es": "Teléfono" },
       "basedInLabel": { "en": "Based in", "es": "Ubicación" },
-      "emailValue": "contact@simplecode.ai",
+      "emailValue": "contact@simplepilot.ai",
       "phoneValue": "+54 (11) 0000‑0000",
       "locationValue": { "en": "Buenos Aires, Argentina", "es": "Buenos Aires, Argentina" }
     },

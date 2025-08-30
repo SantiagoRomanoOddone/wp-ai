@@ -9,7 +9,7 @@ export default function Footer({ onNavigate, t }) {
         <div>
           <div className="flex items-center gap-3">
             <div className={`h-8 w-8 rounded-xl ${brandGradient}`} />
-            <div className="text-lg font-semibold text-slate-900">SimpleCode</div>
+            <div className="text-lg font-semibold text-slate-900">SimplePilot</div>
           </div>
           <p className="mt-3 text-sm text-slate-600">{t.footer.description}</p>
         </div>
@@ -25,7 +25,7 @@ export default function Footer({ onNavigate, t }) {
         <div>
           <div className="text-sm font-semibold text-slate-900">{t.footer.contactTitle}</div>
           <ul className="mt-3 space-y-2 text-sm text-slate-600">
-            <li>{t.footer.emailLabel}: <a className="text-sky-700 hover:underline" href="mailto:contact@simplecode.ai">contact@simplecode.ai</a></li>
+            <li>{t.footer.emailLabel}: <a className="text-sky-700 hover:underline" href="mailto:contact@Simplecre.ai">contact@simplepilot.ai</a></li>
             <li>{t.footer.location}</li>
           </ul>
         </div>
@@ -38,7 +38,7 @@ export default function Footer({ onNavigate, t }) {
         </div>
       </Container>
       <Container className="mt-8 border-t border-slate-200 pt-6 text-xs text-slate-500">
-        © {new Date().getFullYear()} SimpleCode. {t.footer.rights}
+        © {new Date().getFullYear()} SimplePilot. {t.footer.rights}
       </Container>
     </footer>
   );

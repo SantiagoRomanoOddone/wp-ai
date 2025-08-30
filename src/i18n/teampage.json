@@ -6,8 +6,8 @@
         "es": "Nuestro equipo"
       },
       "title": {
-        "en": "Meet the people behind SimpleCode",
-        "es": "Conoce a las personas detrás de SimpleCode"
+        "en": "Meet the people behind SimplePilot",
+        "es": "Conoce a las personas detrás de SimplePilot"
       },
       "subtitle": {
         "en": "Experienced professionals passionate about AI and real business impact.",
@@ -36,16 +36,19 @@
       },
       {
         "name": {
-          "en": "Your Next Consultant",
-          "es": "Tu próximo consultor"
+            "en": "Lucas Veteikis",
+            "es": "Lucas Veteikis"
         },
         "role": {
-          "en": "AI & Data Specialist",
-          "es": "Especialista en IA y Datos"
+            "en": "Data Scientist",
+            "es": "Científico de Datos"
         },
         "blurb": {
-          "en": "Add short bio about expertise, industries, and approach.",
-          "es": "Agrega una breve biografía sobre experiencia, industrias y enfoque."
+            "en": "Developed data science solutions for marketing and retail, with a focus on forecasting, optimization, and measurable business impact.",
+            "es": "Desarrolló soluciones de ciencia de datos para marketing y retail, con enfoque en pronósticos, optimización e impacto medible en el negocio."
+        },
+        "links": {
+            "linkedin": "https://www.linkedin.com/in/lucas-veteikis-757463184/"
         }
       },
       {
